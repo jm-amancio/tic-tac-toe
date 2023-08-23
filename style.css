@@ -30,6 +30,43 @@ body > div {
     flex-direction: column;
 }
 
+.content > div {
+    margin: 10px;
+}
+
+.gameboard {
+    background-color: black;
+    padding: 10px;
+    border-radius: 1rem;
+    display: grid;
+    grid-template-rows: repeat(3, minmax(100px, 150px));
+    grid-template-columns: repeat(3, minmax(100px, 150px));
+}
+
+.gameboard div.cell {
+    background-color: aliceblue;
+    border: 1px solid black;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.gameboard div.cell:hover {
+    background-color: grey;
+}
+
+button {
+    background-color: white;
+    padding: 10px 15px 10px 15px;
+    border: none;
+    border-radius: 1em;
+}
+
+button:hover {
+    background-color: grey;
+}
+
 .footer {
 
 
